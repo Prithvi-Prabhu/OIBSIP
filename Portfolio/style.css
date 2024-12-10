@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    background-color: #f8f1e4; /* Light beige background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #5e503f; /* Warm dark brown */
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sidebar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #f7c59f; /* Light orange */
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #f7c59f; /* Light orange */
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ff784f; /* Accent orange */
+}
+
+/* Main Content */
+main {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Introduction Section */
+.intro {
+    background-color: #ff784f; /* Vibrant orange */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 80px; /* Set to 80x80 */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover; /* Ensures images retain their aspect ratio */
+}
+
+.intro h1 {
+    font-size: 2.2em;
+}
+
+.intro span {
+    color: #5e503f; /* Dark brown for contrast */
+}
+
+.intro p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #5e503f; /* Dark brown */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #f7c59f; /* Light orange */
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+/* Portfolio Section */
+.portfolio {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #5e503f; /* Dark brown */
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images fill the area without stretching */
+}
+
+.project-card h3 {
+    margin-top: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #5e503f; /* Dark brown */
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact a {
+    color: #f7c59f; /* Light orange */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #ff784f; /* Accent orange */
+}
